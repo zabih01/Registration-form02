@@ -1,0 +1,64 @@
+.back{
+    height: 600px;
+    width: 100%;
+    background:linear-gradient(350deg,rgb(21, 90, 121),rgb(227, 140, 140));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px 4px rgb(21, 90, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 h1{
+    color:  rgb(21, 90, 121);
+    position: relative;
+}
+.box1 h1::after{
+    content:'';
+    height:2px;
+    width: 0px;
+    background-color:rgba(26, 1, 48, 0.916);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.box1 h1:hover::after{
+    width: 100%;
+}
+.box1 h1:hover{
+    transition-duration:0.5s;
+    transform-style: preserve-3d;
+    color: rgba(26, 1, 48, 0.916);
+}
+.box1 label{
+    color: rgb(21, 90, 121);
+}
+.box1 label:hover{
+    transition-duration:0.2s;
+    transform-style: preserve-3d;
+    color: rgba(40, 4, 72, 0.916);
+}
+.box1 input{
+    border: none;
+    border-bottom: 2px solid black;
+}
+.box1 button{
+    background-color: rgb(21, 90, 121);
+    color: white;
+    padding:8px 20px;
+    border: none;
+
+}
+.box1 button:hover{
+    transition-duration:0.2s;
+    transform-style: preserve-3d;
+    color: rgba(40, 4, 72, 0.916);
+}
